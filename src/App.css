@@ -1,22 +1,112 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#project{
+  height: calc(100vh - 80px);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: column;
+  margin-top: 80px;
+  justify-content: space-around;
+  font-size: 1.6rem;
 }
 
-.App-link {
-  color: #09d3ac;
+#project h1{
+  font-size: 3rem;
+  padding: 0 2rem;
+  margin: unset;
+}
+#project article{
+  padding: 0 2rem;
+}
+
+#project .projectIntro::first-letter{
+  font-size: 1.6em;
+}
+
+#project p img{
+  max-height: 250px;
+  filter: grayscale(100%) contrast(90%);
+  float: right;
+  shape-outside: circle(50%);
+}
+#project p img.secondPic{
+  float: left;
+  transform: scaleX(-1);
+}
+
+#race{
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#race h1{
+  font-size: 3rem;
+}
+
+#race section{
+  display: flex;
+  align-items: center;
+  height: 65vh;
+  margin: 1rem 2rem;
+  background-image: url('./assets/images/race_background.png');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain;
+}
+#race q{
+  font-size: 1.6em;
+  font-weight: 600;
+  font-style: italic;
+  margin: 1rem 2rem;
+}
+q:before,q:after{content:''}
+#race section article{
+  flex: 6;
+  padding: 1rem 3rem;
+}
+#race section aside{
+  display: grid;
+  flex: 4;
+  grid-template-columns: 1fr 2fr;
+}
+#race section aside div{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+#race section aside div h2, #race section aside div p{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+#div30000{
+  grid-column: 2/3;
+}
+#div8{
+  grid-row: 2/3;
+} 
+#div150{
+  grid-row: 3/4;
+  grid-column: 2/3;
+  justify-self: flex-start;
+}
+#div30000 h2{
+  font-size: 3rem;
+  line-height: 3rem;
+}
+#div30000 p{
+  font-size: 1.3rem;
+}
+#div8 h2{
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+}
+#div150 h2{
+  font-size: 4rem;
+  line-height: 4rem;
+}
+#div150 p{
+  font-size: 1.1rem;
 }

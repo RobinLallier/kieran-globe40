@@ -1,0 +1,44 @@
+.Nav{
+	height: 80px;
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	top: 0;
+	background-color: rgba(250, 249, 242, 0.8);
+	width: 100%;
+	font-size: 1.1em;
+}
+
+.Nav:before{
+	content:'';
+	position: absolute;
+	top: 26px;
+	right: 70px;
+	height: 3px;
+	background-image: linear-gradient(to right, transparent 50%, #888 50%);
+    background-size: 25px 100%;
+	width: 490px;
+	z-index: -1;
+}
+
+.Nav .NavElement{
+	display: flex;
+	flex-flow: column;
+	height: 80px;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: #555555;
+	font-family: 'Crimson Text';
+	padding-right: 32px;
+	transition: color 0.3s ease-in-out;
+}
+
+.NavElement:hover{
+	color: #9B4545;
+	transition: color 0.3s ease-in-out;
+}
+
+.NavElement.active, .NavElement.passed{
+	color: #F37D7D;
+}

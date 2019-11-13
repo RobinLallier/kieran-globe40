@@ -1,13 +1,25 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "EB Garamond", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #FAF9F2;
+  color: #555555;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1, h2, h3, h4{
+	font-family: "EB Garamond", serif;
+	color: #9B4545;
+	font-weight: 600;
+}
+
+strong{
+	color: #9B4545;
+	font-weight: 600;
+}
+
+p{
+  display: inline-block;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
