@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kieran-globe40/precache-manifest.94047380a93a7c8558f4c7310a3c24b7.js"
+  "/kieran-globe40/precache-manifest.fe22ee21f96356a6b6de4d7f4bcc842b.js"
 );
 
 self.addEventListener('message', (event) => {
