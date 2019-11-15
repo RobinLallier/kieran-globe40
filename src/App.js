@@ -2,6 +2,8 @@ import React, { Component }from 'react';
 
 import './App.css';
 import kieran from './assets/images/kieran.png';
+import logoMerConcept from './assets/images/mer_concept.png';
+import logoGabart from './assets/images/logo_francois_gabart.png';
 import Navigation from './Navigation.js';
 import Boat from './Boat.js';
 
@@ -68,11 +70,19 @@ class App extends Component {
           <Boat />
 
           <section id="crew">
-            L’écurie de course au large de François Gabart, Mer Concept, nous soutient pour la construction et la mise au point d’un Class40 innovant :
-            <br/>- Une empreinte carbone réduite : utilisation de fibres naturelles et de résine biosourcée
-            <br/>- Un bateau laboratoire pour de futures innovations : moteur hybride, voiles solaires, . . .
-            <br/>- Un Class40 performant spécialement étudié pour le tour du monde en double
-            <br/>- Une équipe expérimentée et spécialisée dans la construction des voiliers les plus rapide du monde
+            <h1>L'Équipage</h1>
+            <article>
+              <figure>
+                <img src={logoMerConcept} alt='logo Mer Concept'/>
+                <img src={logoGabart} alt='logo Mer Concept' style={{filter: 'invert(100%)'}}/>
+              </figure>
+              <p>L’écurie de course au large de François Gabart, Mer Concept, nous soutient pour la construction et la mise au point d’un Class40 innovant :
+                <br/>- Une empreinte carbone réduite : utilisation de fibres naturelles et de résine biosourcée
+                <br/>- Un bateau laboratoire pour de futures innovations : moteur hybride, voiles solaires, . . .
+                <br/>- Un Class40 performant spécialement étudié pour le tour du monde en double
+                <br/>- Une équipe expérimentée et spécialisée dans la construction des voiliers les plus rapide du monde
+              </p>
+            </article>
           </section>
         </main>
       </div>

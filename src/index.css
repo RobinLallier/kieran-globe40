@@ -5,12 +5,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #FAF9F2;
   color: #555555;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4{
 	font-family: "EB Garamond", serif;
 	color: #9B4545;
 	font-weight: 600;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 strong{
@@ -23,3 +26,4 @@ p{
   margin-block-start: 0;
   margin-block-end: 0;
 }
+

@@ -1,8 +1,15 @@
+main{
+  scroll-snap-type: y mandatory;
+}
+main section{
+  scroll-snap-align: start;
+}
+
 #project{
   height: calc(100vh - 80px);
   display: flex;
   flex-flow: column;
-  margin-top: 80px;
+  padding-top: 80px;
   justify-content: space-around;
   font-size: 1.6rem;
 }
@@ -14,6 +21,10 @@
 }
 #project article{
   padding: 0 2rem;
+  background-image: url('./assets/images/topo.png');
+  background-position: right; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain;
 }
 
 #project .projectIntro::first-letter{
@@ -24,7 +35,7 @@
   max-height: 250px;
   filter: grayscale(100%) contrast(90%);
   float: right;
-  shape-outside: circle(50%);
+  shape-outside: circle(60%);
 }
 #project p img.secondPic{
   float: left;
@@ -32,6 +43,7 @@
 }
 
 #race{
+  padding-top: 80px;
   min-height: calc(100vh - 80px);
   display: flex;
   flex-flow: column nowrap;
@@ -53,7 +65,7 @@
   background-size: contain;
 }
 #race q{
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: 600;
   font-style: italic;
   margin: 1rem 2rem;
@@ -109,4 +121,23 @@ q:before,q:after{content:''}
 }
 #div150 p{
   font-size: 1.1rem;
+}
+
+#crew {
+  padding-top: 80px;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#crew h1{
+  font-size: 3rem;
+}
+#crew figure{
+  display: flex;
+  justify-content: center;
+}
+#crew figure img{
+  max-height: 100px;
 }

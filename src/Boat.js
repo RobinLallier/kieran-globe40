@@ -11,7 +11,9 @@ function Boat(props) {
 	<section id="boat">
 		<h1>Le Bateau</h1>
 		<section>
-			<img src={boat} alt="class40"/>
+			<figure>
+				<img src={boat} alt="class40"/>
+			</figure>
 			<ol>
 				<li>
 					<strong>La voilure</strong>

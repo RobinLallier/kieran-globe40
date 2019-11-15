@@ -16,15 +16,8 @@ function Navigation(props) {
 		{name: "L'Équipage", link: "#crew"},
 		{name: "La Mission", link: "#mission"}
 	];
-
-	function renderNavLinks() {
-		return navigationPages.map((navElem, index) => {
-			return (
-				<a className="NavElement" key={index} href={navElem.link}> 
-					{renderIcon(navElem.link)}
-					{navElem.name}
-				</a>);
-		})	
+	for (let page of navigationPages) {
+		page.state = computeProgress(page.link);
 	}
 
 	function computeProgress(link) {
@@ -34,12 +27,20 @@ function Navigation(props) {
 		else return 'passed';
 	}
 
-	function renderIcon(link) {
-		let progress = computeProgress(link); 
-		const classes = `fas fa-times ${progress}`;
+	function renderNavLinks() {
+		return navigationPages.map((navElem, index) => {
+			return (
+				<a className={`NavElement ${navElem.state}`} key={index} href={navElem.link}> 
+					{renderIcon(navElem)}
+					{navElem.name}
+				</a>);
+		})	
+	}
+	
+	function renderIcon(navElem) {
 		return (
 			<React.Fragment>
-				{progress === 'active' ? <Boat /> : <i className={classes} ></i>}
+				{navElem.state === 'active' ? <Boat /> : <i className={`fas fa-times`} ></i>}
 			</React.Fragment>);
 	}
 

@@ -1,12 +1,24 @@
+#boat{
+	padding-top: 80px;
+	height: calc(100vh - 80px);
+}
 #boat h1{
 	font-size: 3rem;
 	text-align: center;
 }
 #boat section{
+	max-height: 100vh;
 	display: flex;
 	padding: 2rem 4rem;
 }
+#boat section figure{
+	flex: 1;
+}
+#boat section figure img{
+	max-height: 400px;
+}
 #boat section ol{
+	flex: 1;
 	list-style-type: none;
 }
 #boat section ol li{
@@ -27,6 +39,6 @@
     font-size: 20px;
     text-align: center;
     position: absolute;
-    top: -5px;
-    left: 10px;
+    top: 4px;
+    left: 5px;
 }

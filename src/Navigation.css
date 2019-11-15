@@ -4,9 +4,10 @@
 	justify-content: flex-end;
 	position: fixed;
 	top: 0;
-	background-color: rgba(250, 249, 242, 0.8);
+	background-color: rgb(250, 249, 242);
 	width: 100%;
 	font-size: 1.1em;
+	z-index: 100;
 }
 
 .Nav:before{
